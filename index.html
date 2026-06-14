@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Management Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("image/event.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    font-size:3rem;
+}
+
+header p{
+    margin-top:10px;
+    font-size:1.2rem;
+}
+
+nav{
+    background:#222;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+nav ul li{
+    margin:10px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    padding:10px 15px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    background:#2575fc;
+    border-radius:5px;
+}
+
+section{
+    padding:60px 10%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#2575fc;
+}
+
+.about{
+    text-align:center;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.project{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.project img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.project-content{
+    padding:15px;
+}
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+    text-align:center;
+}
+
+.stat-box{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    width:200px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.stat-box h3{
+    font-size:2rem;
+    color:#2575fc;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact button{
+    padding:12px 25px;
+    border:none;
+    background:#2575fc;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+    margin-top:15px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Event Management Portfolio</h1>
+    <p>Professional Event Planner & Organizer</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Events</a></li>
+        <li><a href="#stats">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+        <p>
+            Welcome to my Event Management Portfolio.
+            I specialize in organizing corporate events,Brand Promotion,
+            weddings, cultural programs, conferences,
+            and social gatherings. My goal is to create
+            memorable experiences through effective planning
+            and execution.
+        </p>
+    </div>
+</section>
+
+<section id="services">
+    <h2>Services</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>Corporate Events</h3>
+            <p>Meetings, seminars, conferences and product launches.</p>
+        </div>
+
+        <div class="card">
+            <h3>Wedding Planning</h3>
+            <p>Complete wedding planning and coordination services.</p>
+        </div>
+
+        <div class="card">
+            <h3>Cultural Programs</h3>
+            <p>University festivals, concerts and cultural events.</p>
+        </div>
+
+        <div class="card">
+            <h3>Birthday Events</h3>
+            <p>Creative birthday party planning and decoration.</p>
+        </div>
+
+        <div class="card">
+            <h3>Brand Promotion</h3>
+            <p>Creative brand promotion planning, decoration and Clients handling.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Recent Events</h2>
+
+    <div class="projects">
+
+        <div class="project">
+            <img src="Image/corr.jpeg" alt="">
+            <div class="project-content">
+                <h3>Business Conference 2026</h3>
+                <p>Successfully managed a corporate conference with 500+ attendees.</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="Image/weeding.jpeg" alt="">
+            <div class="project-content">
+                <h3>Wedding Ceremony</h3>
+                <p>Luxury wedding event planning with complete coordination.</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="Image/fest.jpeg" alt="">
+            <div class="project-content">
+                <h3>Cultural Festival</h3>
+                <p>University cultural festival organized for 1000+ students.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="stats">
+    <h2>Achievements</h2>
+
+    <div class="stats">
+
+        <div class="stat-box">
+            <h3 id="events">0</h3>
+            <p>Events Managed</p>
+        </div>
+
+        <div class="stat-box">
+            <h3 id="clients">0</h3>
+            <p>Happy Clients</p>
+        </div>
+
+        <div class="stat-box">
+            <h3 id="awards">0</h3>
+            <p>Awards</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <div class="contact">
+        <p>Email: mdalshaharia831@gmail.com</p>
+        <p>Phone: +880 01580249970</p>
+
+        <button onclick="showMessage()">
+            Send Inquiry
+        </button>
+
+        <p id="msg"></p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Event Management Portfolio | All Rights Reserved</p>
+</footer>
+
+<script>
+
+function animateValue(id,start,end,duration){
+
+    let obj=document.getElementById(id);
+    let range=end-start;
+    let current=start;
+    let increment=end>start ? 1 : -1;
+    let stepTime=Math.abs(Math.floor(duration/range));
+
+    let timer=setInterval(function(){
+
+        current+=increment;
+        obj.textContent=current+"+";
+
+        if(current==end){
+            clearInterval(timer);
+        }
+
+    },stepTime);
+}
+
+animateValue("events",0,120,2000);
+animateValue("clients",0,95,2000);
+animateValue("awards",0,15,2000);
+
+function showMessage(){
+    document.getElementById("msg").innerHTML =
+    "Thank you! Your inquiry has been received.";
+}
+
+</script>
+
+</body>
+</html>
